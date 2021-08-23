@@ -5,6 +5,8 @@ const path = require('path')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const port = process.env.PORT || 3000
+
 // Define paths for Express config
 
 // Setup handlbars and view path
@@ -71,4 +73,4 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => console.log('Server startd!'))
+app.listen(port, () => console.log('Server startd!'))
