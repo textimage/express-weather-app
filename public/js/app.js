@@ -1,6 +1,6 @@
 
 async function loadWeather(loc) {
-    const URL = `http://localhost:3000/weather?address=${loc}`
+    const URL = `/weather?address=${loc}`
     const response = await fetch(URL)
     if(response.error) {
         return response.error
