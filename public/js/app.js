@@ -13,8 +13,6 @@ async function loadWeather(loc) {
     return data
 }
 
-// loadWeather()
-
 const weatherForm = document.querySelector('form')
 const weatherInput = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
